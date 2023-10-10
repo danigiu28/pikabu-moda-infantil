@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* index */
+
+/* Encabezado */
+
+header{
+    background-color: #D96704;
+    width: 100%;
+    font-size: 1.55rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.headerIndex{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+header a .logoEncabezado{
+    max-width: 25%;
+    max-height: 12%;
+    border-radius: 50%;
+    margin: 1.25rem
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: .625rem;    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Cuerpo Index*/
+
+.articleIndex{
+    background-color: #F2DAAC;
+}
+
+.articleIndex h1{
+    color: #D96704;
+    font-family:cursive;
+    font-weight: bold;
+
+}
+
+.sectionPrincipal{
+    width: 90%;
+    background-color: #D97904;
+    margin: 3.125rem;
+    padding: 2.5rem;
+    
+}
+
+.sectionPrincipal h1{
+    color: white;
+    background-color: #f2daac72;
+    text-align: center;
+    padding: 1.25rem;
+    border: 1px solid #b05302;
+}
+
+.card{
+    width: 30rem;
+    border-radius: 1.25rem;
+    box-shadow: 1px 1px .625rem black;
+    background-color: #F2DAAC;
+    position: relative;
+
+    padding: 1.25rem;
+    margin: 10px;
+}
+
+.card div img{
+    width: 25%;
+    height: auto;
+    border-radius: 30%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1.25em;
+} 
+
+.btnInicioCatalogo a{
+    background-color: #F2DAAC;
+    padding: 1.25rem;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+.sectionSecundaria{
+    background-color: #F2DAAC;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2.5rem;
+}
+
+.sectionSecundaria div a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* Cuerpo Catalogo */
+
+.cabeceraCatalogo{
+    background-color: #F2DAAC;
+    padding: 2.5rem;
+}
+.buscar {
+    position: relative;
+    padding: 10px;
+}
+
+.buscar input {
+    width: 21.875rem;
+    height: 2.5rem;
+    padding: 20px;
+    margin: 0 0 20px;
+    font-size: 1.125rem;
+    border: 1px solid silver;
+    border-radius: 30px;
+    outline: none;
+}
+
+.btn{
+    background-color: #D96704;
+    padding: 10px;
+    top: 0;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.cabeceraCatalogo .buscadorEspecifico{
+    justify-content: space-around;
+    align-items: stretch;
+    display: flex;
+}
+
+.cabeceraCatalogo .buscadorEspecifico h3{
+    padding-bottom: .9375rem;
+    
+}
+
+.cabeceraCatalogo .buscadorEspecifico label{
+    padding-right: 1.25rem;
+}
+
+.cards{
+    width: auto;
+    background-color: #D97904;
+    margin: 3.125rem;
+    padding: 2.5rem;
+}
+.cards div{
+    width: 100%;
+    height: 31.25rem;
+    text-decoration: none;
+    margin: 4.375rem;
+}
+
+.cards div p{
+    padding-bottom: .1875rem;
+}
+
+.cards div button a{
+    text-decoration: none;
+    background-color: #F2DAAC;
+    color: black;
+    font-style: italic;
+    border-color: #F2DAAC;
+}
+
+.cards div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 1.25rem;
+    padding: .625rem;
+}
+
+/* Cuerpo Noticias */
+
+.sectionNoticias{
+    background-color: #F2DAAC;
+    margin: 3.125rem;
+    padding: 2.5rem;
+}
+
+.sectionNoticias h2{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1.25rem;
+}
+
+.sectionNoticias p{
+    color: black;
+    font-size: 1.5em;
+    padding: 1.25rem;
+}
+
+.sectionNoticias div img{
+    width: auto;
+    height: 50%;
+    border-radius: 50%;
+}
+
+/* Contacto */
+
+.mainContacto{
+    background-color: #F2DAAC;
+    margin: 3.125rem;
+    padding: 2.5rem;
+
+}
+
+.mainContacto .contactoPrincipal{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.mainContacto .contactoPrincipal h3{
+    padding: 1.25rem;
+}
+
+
+.mainContacto .contactoPrincipal div form fieldset label {
+    display: block;
+}
+
+.mainContacto .contactoSecundario div{
+    padding: 2.5rem;
+}
+
+.mainContacto .contactoSecundario div h3{
+    padding: 2.5rem;
+}
+
+.contactoSecundario div ul li{
+    list-style: none;
+}
+
+.contactoSecundario div ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1.875rem;
+}
+
+.maps{
+    margin: 2.5rem;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.maps iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* pagina Sobre Mi */
+.mainSobremi{
+    width: auto;
+    background-image: url("../assets/img/foto-sobremi-pikabu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    margin: 3.125rem;
+    padding: 2.5rem;
+
+}
+
+.sectionSobremi h2{
+    color: black;
+    font-family:cursive;
+    font-size: 2.5rem;
+    margin: 3.125rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-color: #D96704;
+    border-style:double;
+    background-color: #f2daac5d;
+    }
+
+.sectionSobremi p{
+    color: black;
+    font-family:cursive;
+}
+
+.sectionVideo{
+    padding: 3.75rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+
+.sectionVideo h3{
+    width: auto;
+    background-color: #f2daac5d;
+    color: black;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border-color: #D96704;
+    border-style:double;
+    
+}
+
+.sectionVideo video{
+    background-position: 50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* footer */
+
+footer{
+    background-color: #D96704;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.50rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer div a .logoPie{
+    padding: 1.25rem;
+}
+
+footer .footer{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.contacto ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .spotify{
+    padding:  1.25rem;
+}
+
+/* Responsive */
+
+/* @media (max-width:860px) and (min-width:480px) {
+    .sectionPrincipal{
+        display: grid;
+        grid-template-areas:
+        "c-uno c-dos"
+        "c-tres c-tres"
+        "c-cuatro cuatro"
+        "c-cinco c-cinco"
+        ;
+    }
+
+} */
+
+
