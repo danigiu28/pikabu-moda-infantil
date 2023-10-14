@@ -8,6 +8,7 @@ html{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     text-align: center;
+    height: 100%;
 }
 
 /* index */
@@ -23,32 +24,71 @@ header{
 }
 
 .headerIndex{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-/*     position: sticky;
-    top: 0px;
-    z-index: 4; */
-}    
+    display: grid;    
+    gap: 20px;
+    grid-template-areas: 
+    "logo logo barra barra"
+    ;
+} 
 
-header a .logoEncabezado{
-    max-width: 25%;
-    max-height: 12%;
-    border-radius: 50%;
+.logoEncabezado{
+    grid-area: logo;
+}
+.navbar{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-area: barra;
+}
+
+.inicio{
+    grid-area: inicio;
+}
+.catalogo{
+    grid-area: catalogo;
+}
+.noticias{
+    grid-area: noticias;
+}
+.contacto{
+    grid-area: contacto;
+}
+.sobremi{
+    grid-area: sobremi;
+}
+.carrito{
+    grid-area: carrito;
+}
+.perfil{
+    grid-area: perfil;
+}
+
+.logoEncabezado a{
     margin: 1.25rem
 }
 
-header nav ul li{
-    display: inline-block;
-    padding: .625rem;    
+.logoEncabezado a img{
+    width: 30%;
+    min-height: auto;
+    border-radius: 50%;
+    margin: 20px;
 }
 
-header nav ul li a{
+.navbar ul {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: (7,14.28%);
+    grid-template-areas: 
+    "inicio catalogo noticias contacto sobremi carrito perfil";
+    list-style: none;
+    margin: 1.25rem;
+    gap: 20px;
+}
+
+.navbar ul li a{
     text-decoration: none;
     color: black;
 }
-
 
 /* Cuerpo Index*/
 
@@ -60,7 +100,6 @@ header nav ul li a{
     color: #D96704;
     font-family:cursive;
     font-weight: bold;
-
 }
 
 .sectionPrincipal{
@@ -98,14 +137,12 @@ header nav ul li a{
     box-shadow: 1px 1px .625rem black;
     background-color: #F2DAAC;
     position: relative;
-
 }
 
 .card div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .card h3 {
@@ -131,7 +168,6 @@ header nav ul li a{
     color: black;
     text-decoration: none;
     font-size: 1.5em;
-
 }
 
 .sectionSecundaria{
@@ -144,8 +180,7 @@ header nav ul li a{
 
 .sectionSecundaria div a {
     text-decoration: none;
-    color: black;
-    
+    color: black;    
 }
 
 /* Cuerpo Catalogo */
@@ -187,7 +222,6 @@ header nav ul li a{
 
 .cabeceraCatalogo .buscadorEspecifico h3{
     padding-bottom: .9375rem;
-    
 }
 
 .cabeceraCatalogo .buscadorEspecifico label{
@@ -195,17 +229,18 @@ header nav ul li a{
 }
 
 .cardsContainerCatalogo{
-    display: flex;
-    width: 100%;  
+
+    /* flexbox */
+    display: flex; 
     position: relative;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content:space-between;
     align-content:center; 
+    width: 100%; 
     background-color: #D97904;
     border: 2.5rem double #f2daac78;
     padding: 1.25rem;    
-    
 }
 
 .card button a{
@@ -215,8 +250,7 @@ header nav ul li a{
     border: 5px double #D97904;
     color: black;
     font-style: italic;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .like{
@@ -258,7 +292,6 @@ header nav ul li a{
     background-color: #F2DAAC;
     margin: 3.125rem;
     padding: 2.5rem;
-
 }
 
 .mainContacto .contactoPrincipal{
@@ -319,7 +352,6 @@ header nav ul li a{
     font-weight: bold;
     margin: 3.125rem;
     padding: 2.5rem;
-
 }
 
 .sectionSobremi h2{
@@ -332,7 +364,7 @@ header nav ul li a{
     border-color: #D96704;
     border-style:double;
     background-color: #f2daac5d;
-    }
+}
 
 .sectionSobremi p{
     color: black;
@@ -342,8 +374,7 @@ header nav ul li a{
 .sectionVideo{
     padding: 3.75rem;
     font-weight: bold;
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;    
 }
 
 .sectionVideo h3{
@@ -354,7 +385,6 @@ header nav ul li a{
     padding: 2.5rem;
     border-color: #D96704;
     border-style:double;
-    
 }
 
 .sectionVideo video{
