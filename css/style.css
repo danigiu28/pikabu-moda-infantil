@@ -6,7 +6,6 @@
 
 html{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.25rem;
     text-align: center;
     height: 100%;
     overflow-x: hidden
@@ -457,6 +456,8 @@ footer .spotify{
 
 /* Responsive */
 
+/* INICIO */
+
 @media (max-width:1024px) {
     header{
         grid-template-areas: 
@@ -477,7 +478,7 @@ footer .spotify{
         ;
         justify-content: center;
         align-content: center;
-        margin-left: 4.375rem;
+        margin-left: 8.125rem;
     }
 }
 
@@ -485,19 +486,66 @@ footer .spotify{
     .navbar {
         font-size: 1.25rem;
     }
-
-    
-}
-@media (max-width:428px) {
     .sectionPrincipal{
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            }
+    .cardContainer{
+        margin-left: 7.5rem;
+    }
+    footer{
+        font-size: 1.50rem;
+    }
+}
+@media (max-width:428px) {
+    header{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .logoEncabezado a img{
+        width: 50%;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
     }
     .cardContainer{
-        
-
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "newborn"
+        "mini"
+        "kids"
+        "accesorios"
+        ;
     }
-    
+    .sectionSecundaria{
+        font-size: 1.125rem;
+    }
+    .footer{
+        font-size: 1.125rem;
+    }
+}
+@media (max-width:320px){
+    .navbar ul{
+        font-size: 1.125rem;
+    }
+    .articleIndex{
+        font-size: 0.75em;
+    }
+    .cardContainer{
+        margin-right: 7.1rem;
+    }
+    footer{
+        padding-bottom: 2.50rem;
+    }
+    .spotify{
+        height: 12.5rem;
 }
 
+}
