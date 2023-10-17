@@ -531,6 +531,16 @@ footer .spotify{
         font-size: 1.125rem;
     }
 }
+@media (max-width:360px){
+    .cardContainer{
+        margin-right: 4.5rem;
+    }
+    .spotify{
+        height: 12.5rem;
+    }
+}
+
+
 @media (max-width:320px){
     .navbar ul{
         font-size: 1.125rem;
@@ -546,6 +556,5 @@ footer .spotify{
     }
     .spotify{
         height: 12.5rem;
-}
-
+    }
 }
