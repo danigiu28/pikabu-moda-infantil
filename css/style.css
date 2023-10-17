@@ -481,7 +481,6 @@ footer .spotify{
         margin-left: 8.125rem;
     }
 }
-
 @media (max-width:768px) {
     .navbar {
         font-size: 1.25rem;
@@ -539,8 +538,6 @@ footer .spotify{
         height: 12.5rem;
     }
 }
-
-
 @media (max-width:320px){
     .navbar ul{
         font-size: 1.125rem;
@@ -556,5 +553,52 @@ footer .spotify{
     }
     .spotify{
         height: 12.5rem;
+    }
+}
+
+/* CATALOGO */
+
+@media (max-width:428px) {
+    .buscar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buscar input {
+        width: 100%;
+        padding: 1.25rem;
+    }
+    .btn {
+        width: 20%;
+        top:0;
+        right: 0;
+    }
+    .cardsContainerCatalogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:360px){
+    .btn {
+        width: 21%;
+        position:static;
+    }
+    .cabeceraCatalogo .buscadorEspecifico {
+            flex-direction: column;
+            align-items: center;
+    }
+    .cabeceraCatalogo .buscadorEspecifico label {
+            padding-right: 0;
+            margin-bottom: 0.5rem;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }    
+}
+@media (max-width:320px){
+    .btn{
+        width: 25%;
     }
 }
