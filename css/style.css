@@ -500,6 +500,46 @@ footer .spotify{
         font-size: 1.50rem;
     }
 }
+
+@media screen and (max-width: 636px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar li {
+        margin-bottom: 10px;
+    }
+    .sectionPrincipal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: 7.5rem;
+    }
+    .card {
+        margin: 0 1.25rem 1.25rem;
+        text-align: center;
+    }
+}
+
+
 @media (max-width:428px) {
     header{
         display: flex;
@@ -532,7 +572,7 @@ footer .spotify{
 }
 @media (max-width:360px){
     .cardContainer{
-        margin-right: 4.5rem;
+        margin-right: 7rem;
     }
     .spotify{
         height: 12.5rem;
@@ -557,6 +597,20 @@ footer .spotify{
 }
 
 /* CATALOGO */
+
+@media screen and (max-width: 636px) {
+    .cardsContainerCatalogo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        margin-bottom: 0px 1.25rem 1.25rem;
+        text-align: center;
+    }
+    
+}
 
 @media (max-width:428px) {
     .buscar {
