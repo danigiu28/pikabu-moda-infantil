@@ -73,21 +73,9 @@ header{
     margin: 20px;
 }
 
-.navbar ul {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "inicio catalogo noticias contacto sobremi carrito perfil";
-    list-style: none;
-    margin: 1.25rem;
-    gap: 20px;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-.navbar ul li a{
-    text-decoration: none;
-    color: black;
-}
-
 /* Cuerpo Index*/
 
 .articleIndex{
@@ -632,8 +620,15 @@ footer .spotify{
         flex-direction: column;
         align-items: center;
     }
+    .card{
+        width: 100%;
+        margin: 1rem;
+    }
+    .footlog{
+        margin: 1rem;
+    }
 }
-@media (max-width:360px){
+/* @media (max-width:360px){
     .btn {
         width: 21%;
         position:static;
@@ -655,4 +650,7 @@ footer .spotify{
     .btn{
         width: 25%;
     }
-}
+    .footlog p{
+        margin: 1rem
+    }
+} */
