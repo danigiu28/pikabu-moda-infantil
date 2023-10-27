@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     height: 100%;
     overflow-x: hidden
@@ -15,15 +15,15 @@ html{
 
 /* Encabezado */
 
-body{
+body {
     overflow-x: hidden
 }
 
-header{
+header {
     display: grid;
-    width: 100;    
-    grid-template-areas: 
-    "logo barra"
+    width: 100;
+    grid-template-areas:
+        "logo barra"
     ;
     background-color: #D96704;
     font-size: 1.55rem;
@@ -31,43 +31,50 @@ header{
     font-weight: bold;
 }
 
-.logoEncabezado{
+.logoEncabezado {
     grid-area: logo;
 }
-.navbar{
+
+.navbar {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-area: barra;
 }
 
-.inicio{
+.inicio {
     grid-area: inicio;
 }
-.catalogo{
+
+.catalogo {
     grid-area: catalogo;
 }
-.noticias{
+
+.noticias {
     grid-area: noticias;
 }
-.contacto{
+
+.contacto {
     grid-area: contacto;
 }
-.sobremi{
+
+.sobremi {
     grid-area: sobremi;
 }
-.carrito{
+
+.carrito {
     grid-area: carrito;
 }
-.perfil{
+
+.perfil {
     grid-area: perfil;
 }
 
-.logoEncabezado a{
+.logoEncabezado a {
     margin: 1.25rem
 }
 
-.logoEncabezado a img{
+.logoEncabezado a img {
     width: 30%;
     border-radius: 50%;
     margin: 20px;
@@ -76,25 +83,26 @@ header{
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 /* Cuerpo Index*/
 
-.articleIndex{
+.articleIndex {
     background-color: #F2DAAC;
 }
 
-.articleIndex h1{
+.articleIndex h1 {
     color: #D96704;
-    font-family:cursive;
+    font-family: cursive;
     font-weight: bold;
 }
 
-.sectionPrincipal{
+.sectionPrincipal {
     width: 100%;
     background-color: #D97904;
     padding: 2.5rem;
 }
 
-.sectionPrincipal h1{
+.sectionPrincipal h1 {
     color: white;
     background-color: #f2daac72;
     font-size: 1.8125rem;
@@ -104,7 +112,7 @@ header{
     border: 1px solid #b05302;
 }
 
-.cardContainer{
+.cardContainer {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -113,20 +121,23 @@ header{
     align-content: center;
 }
 
-.newborn{
+.newborn {
     grid-area: newborn;
 }
-.mini{
+
+.mini {
     grid-area: mini;
 }
-.kids{
+
+.kids {
     grid-area: kids;
 }
-.accesorios{
+
+.accesorios {
     grid-area: accesorios;
 }
 
-.card{
+.card {
     width: 15rem;
     padding-bottom: 1.875rem;
     margin-bottom: 1.25rem;
@@ -138,7 +149,7 @@ header{
     overflow: hidden;
 }
 
-.card div img{
+.card div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -156,11 +167,11 @@ header{
     vertical-align: bottom;
 }
 
-.btnInicioCatalogo{
+.btnInicioCatalogo {
     margin: 20px;
 }
 
-.btnInicioCatalogo a{
+.btnInicioCatalogo a {
     background-color: #F2DAAC;
     padding: 1.25rem;
     border-radius: 50%;
@@ -169,7 +180,7 @@ header{
     font-size: 1.5em;
 }
 
-.sectionSecundaria{
+.sectionSecundaria {
     background-color: #F2DAAC;
     width: 100%;
     font-size: 1.5rem;
@@ -179,15 +190,16 @@ header{
 
 .sectionSecundaria div a {
     text-decoration: none;
-    color: black;    
+    color: black;
 }
 
 /* Cuerpo Catalogo */
 
-.cabeceraCatalogo{
+.cabeceraCatalogo {
     background-color: #F2DAAC;
     padding: 2.5rem;
 }
+
 .buscar {
     position: relative;
     padding: 10px;
@@ -204,7 +216,7 @@ header{
     outline: none;
 }
 
-.btn{
+.btn {
     background-color: #D96704;
     padding: 10px;
     top: 0;
@@ -213,46 +225,50 @@ header{
     cursor: pointer;
 }
 
-.cabeceraCatalogo .buscadorEspecifico{
+.cabeceraCatalogo .buscadorEspecifico {
     justify-content: space-around;
     align-items: stretch;
     display: flex;
 }
 
-.cabeceraCatalogo .buscadorEspecifico h3{
+.cabeceraCatalogo .buscadorEspecifico h3 {
     padding-bottom: .9375rem;
 }
 
-.cabeceraCatalogo .buscadorEspecifico label{
+.cabeceraCatalogo .buscadorEspecifico label {
     padding-right: 1.25rem;
 }
 
-.cardsContainerCatalogo{
+.cardsContainerCatalogo {
 
     /* flexbox */
-    display: flex; 
+    display: flex;
     position: relative;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content:space-between;
-    align-content:center; 
-    width: 100%; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
     background-color: #D97904;
     border: 2.5rem double #f2daac78;
-    padding: 1.25rem;    
+    padding: 1.25rem;
 }
 
-.card button a{
+
+.card .contenido a
+
+/* button a */
+    {
     padding: 5px;
     text-decoration: none;
-    background-color:#F2DAAC ;
+    background-color: #F2DAAC;
     border: 5px double #D97904;
     color: black;
     font-style: italic;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-.like{
+.like {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -260,26 +276,26 @@ header{
 
 /* Cuerpo Noticias */
 
-.sectionNoticias{
+.sectionNoticias {
     background-color: #F2DAAC;
     margin: 3.125rem;
     padding: 2.5rem;
 }
 
-.sectionNoticias h2{
+.sectionNoticias h2 {
     color: black;
     font-weight: bold;
     font-size: 1.5em;
     padding: 1.25rem;
 }
 
-.sectionNoticias p{
+.sectionNoticias p {
     color: black;
     font-size: 1.5em;
     padding: 1.25rem;
 }
 
-.sectionNoticias div img{
+.sectionNoticias div img {
     width: auto;
     height: 50%;
     border-radius: 50%;
@@ -287,19 +303,19 @@ header{
 
 /* Contacto */
 
-.mainContacto{
+.mainContacto {
     background-color: #F2DAAC;
     margin: 3.125rem;
     padding: 2.5rem;
 }
 
-.mainContacto .contactoPrincipal{
+.mainContacto .contactoPrincipal {
     width: 100%;
     height: auto;
     padding: 20px;
 }
 
-.mainContacto .contactoPrincipal h3{
+.mainContacto .contactoPrincipal h3 {
     padding: 1.25rem;
 }
 
@@ -308,42 +324,42 @@ header{
     display: block;
 }
 
-.mainContacto .contactoSecundario div{
+.mainContacto .contactoSecundario div {
     padding: 2.5rem;
 }
 
-.mainContacto .contactoSecundario div h3{
+.mainContacto .contactoSecundario div h3 {
     padding: 2.5rem;
 }
 
-.contactoSecundario div ul li{
+.contactoSecundario div ul li {
     list-style: none;
 }
 
-.contactoSecundario div ul li a{
+.contactoSecundario div ul li a {
     text-decoration: none;
     color: black;
     padding: 1.875rem;
 }
 
-.maps{
+.maps {
     margin: 2.5rem;
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-.maps iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.maps iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /* pagina Sobre Mi */
-.mainSobremi{
+.mainSobremi {
     width: auto;
     background-image: url("../assets/img/foto-sobremi-pikabu.jpg");
     background-size: cover;
@@ -353,48 +369,48 @@ header{
     padding: 2.5rem;
 }
 
-.sectionSobremi h2{
+.sectionSobremi h2 {
     color: black;
-    font-family:cursive;
+    font-family: cursive;
     font-size: 2.5rem;
     margin: 3.125rem;
     padding: 2.5rem;
     text-align: center;
     border-color: #D96704;
-    border-style:double;
+    border-style: double;
     background-color: #f2daac5d;
 }
 
-.sectionSobremi p{
+.sectionSobremi p {
     color: black;
-    font-family:cursive;
+    font-family: cursive;
 }
 
-.sectionVideo{
+.sectionVideo {
     padding: 3.75rem;
     font-weight: bold;
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
 }
 
-.sectionVideo h3{
+.sectionVideo h3 {
     width: auto;
     background-color: #f2daac5d;
     color: black;
     margin-bottom: 2rem;
     padding: 2.5rem;
     border-color: #D96704;
-    border-style:double;
+    border-style: double;
 }
 
-.sectionVideo video{
+.sectionVideo video {
     background-position: 50%;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* footer */
 
-footer{
+footer {
     background-color: #D96704;
     width: 100%;
     text-align: center;
@@ -403,12 +419,12 @@ footer{
     font-weight: bold;
 }
 
-footer div a .logoPie{
+footer div a .logoPie {
     padding: 1.25rem;
-    
+
 }
 
-footer .footer{
+footer .footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -417,15 +433,15 @@ footer .footer{
     flex-direction: column;
 }
 
-.footlog{
+.footlog {
     margin: .625rem
 }
 
-.rrss{
+.rrss {
     padding: 1.25rem;
 }
 
-.footcontacto{
+.footcontacto {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -433,13 +449,13 @@ footer .footer{
     flex-direction: column;
 }
 
-.footcontacto ul li a{
+.footcontacto ul li a {
     text-decoration: none;
     color: black;
 }
 
-footer .spotify{
-    padding:  1.25rem;
+footer .spotify {
+    padding: 1.25rem;
 }
 
 /* Responsive */
@@ -447,44 +463,55 @@ footer .spotify{
 /* INICIO */
 
 @media (max-width:1024px) {
-    header{
-        grid-template-areas: 
-        "logo" 
-        "barra"
+    header {
+        grid-template-areas:
+            "logo"
+            "barra"
         ;
     }
-    .sectionPrincipal h1{
+
+    .navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionPrincipal h1 {
         font-size: 1.25rem;
     }
-    .cardContainer{
+
+    .cardContainer {
         display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-rows: repeat(2,50%);
-        grid-template-areas: 
-        "newborn mini"
-        "kids accesorios"        
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "newborn mini"
+            "kids accesorios"
         ;
         justify-content: center;
         align-content: center;
         margin-left: 8.125rem;
     }
 }
+
 @media (max-width:768px) {
     .navbar {
         font-size: 1.25rem;
     }
-    .sectionPrincipal{
+
+    .sectionPrincipal {
         display: flex;
         justify-content: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-            }
-    .cardContainer{
+    }
+
+    .cardContainer {
         margin-left: 7.5rem;
     }
-    footer{
+
+    footer {
         font-size: 1.50rem;
     }
 }
@@ -493,9 +520,8 @@ footer .spotify{
     .navbar {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    
+
     .navbar ul {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -505,15 +531,18 @@ footer .spotify{
         flex-direction: column;
         align-items: center;
     }
+
     .navbar li {
         margin-bottom: 10px;
     }
+
     .sectionPrincipal {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     .cardContainer {
         display: flex;
         justify-content: center;
@@ -521,6 +550,7 @@ footer .spotify{
         flex-wrap: wrap;
         margin-right: 7.5rem;
     }
+
     .card {
         margin: 0 1.25rem 1.25rem;
         text-align: center;
@@ -529,57 +559,69 @@ footer .spotify{
 
 
 @media (max-width:428px) {
-    header{
+    header {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: center;
     }
-    .logoEncabezado a img{
+
+    .logoEncabezado a img {
         width: 50%;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: flex;
         flex-direction: column;
     }
-    .cardContainer{
+
+    .cardContainer {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: 
-        "newborn"
-        "mini"
-        "kids"
-        "accesorios"
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "newborn"
+            "mini"
+            "kids"
+            "accesorios"
         ;
     }
-    .sectionSecundaria{
+
+    .sectionSecundaria {
         font-size: 1.125rem;
     }
-    .footer{
+
+    .footer {
         font-size: 1.125rem;
     }
 }
-@media (max-width:360px){
-    .cardContainer{
+
+@media (max-width:360px) {
+    .cardContainer {
         margin-right: 7rem;
     }
-    .spotify{
+
+    .spotify {
         height: 12.5rem;
     }
 }
-@media (max-width:320px){
-    .navbar ul{
+
+@media (max-width:320px) {
+    .navbar ul {
         font-size: 1.125rem;
     }
-    .articleIndex{
+
+    .articleIndex {
         font-size: 0.75em;
     }
-    .cardContainer{
+
+    .cardContainer {
         margin-right: 7.1rem;
     }
-    footer{
+
+    footer {
         padding-bottom: 2.50rem;
     }
-    .spotify{
+
+    .spotify {
         height: 12.5rem;
     }
 }
@@ -592,12 +634,12 @@ footer .spotify{
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .card {
         margin-bottom: 0px 1.25rem 1.25rem;
         text-align: center;
     }
-    
+
 }
 
 @media (max-width:428px) {
@@ -606,51 +648,30 @@ footer .spotify{
         flex-direction: column;
         align-items: center;
     }
+
     .buscar input {
         width: 100%;
         padding: 1.25rem;
     }
+
     .btn {
         width: 20%;
-        top:0;
+        top: 0;
         right: 0;
     }
+
     .cardsContainerCatalogo {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .card{
-        width: 100%;
-        margin: 1rem;
-    }
-    .footlog{
-        margin: 1rem;
-    }
-}
-/* @media (max-width:360px){
-    .btn {
-        width: 21%;
-        position:static;
-    }
-    .cabeceraCatalogo .buscadorEspecifico {
-            flex-direction: column;
-            align-items: center;
-    }
-    .cabeceraCatalogo .buscadorEspecifico label {
-            padding-right: 0;
-            margin-bottom: 0.5rem;
-    }
+
     .card {
         width: 100%;
-        margin-bottom: 1rem;
-    }    
+        margin: 1rem;
+    }
+
+    .footlog {
+        margin: 1rem;
+    }
 }
-@media (max-width:320px){
-    .btn{
-        width: 25%;
-    }
-    .footlog p{
-        margin: 1rem
-    }
-} */
