@@ -96,6 +96,11 @@ header {
     font-weight: bold;
 }
 
+.articleIndex div h4 {
+    margin-bottom: 0;
+    padding: .3125rem;
+}
+
 .sectionPrincipal {
     width: 100%;
     background-color: #D97904;
@@ -303,6 +308,9 @@ select:focus {
 .news {
     background-color: #F2DAAC;
     padding: 2.5rem;
+    align-items: center;
+    margin: auto;
+
 }
 
 .sectionNoticias h2 {
@@ -312,16 +320,55 @@ select:focus {
     padding: 1.25rem;
 }
 
-.sectionNoticias p {
-    color: black;
-    font-size: 1.5em;
-    padding: 1.25rem;
-}
-
 .sectionNoticias div img {
     width: 100%;
-    height: 50%;
-    /* border-radius: 50%; */
+    height: 25%;
+}
+
+.imgNews {
+    margin: 5px auto;
+    border: 1px solid #D96704;
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.animacion {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.imgNews:hover .animacion {
+    bottom: 0;
+    opacity: 1;
+    box-shadow: 0rem 0rem 1.25rem #D96704;
+}
+
+.textNews {
+    color: #D96704;
+    font-weight: bold;
+    padding: 1.25rem;
+    font-size: 3.125rem;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1.25rem;
+    background-color: transparent;
+    text-align: center;
+    line-height: 1.25;
+    transform: translateY(-50%);
+}
+
+.grupoWhatsapp{
+    padding: 2.5rem;
 }
 
 /* Contacto */
