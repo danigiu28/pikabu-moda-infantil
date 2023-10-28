@@ -225,18 +225,45 @@ header {
     cursor: pointer;
 }
 
-.cabeceraCatalogo .buscadorEspecifico {
-    justify-content: space-around;
-    align-items: stretch;
+.buscadorEspecifico {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.cabeceraCatalogo .buscadorEspecifico h3 {
-    padding-bottom: .9375rem;
+.buscadorEspecifico label {
+    padding: .625rem;
+    font-size: 1.125rem;
+    color: #D96704;
+    font-weight: bold;
+    border: .625rem solid #D96704;
+    border-radius: 30px;
+    margin: .625rem;
 }
 
-.cabeceraCatalogo .buscadorEspecifico label {
-    padding-right: 1.25rem;
+.buscadorEspecifico label select {
+    width: 100%;
+    padding: .3125rem;
+    margin: .125rem;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+select:focus {
+    outline: none;
+    border-color: #D97904;
 }
 
 .cardsContainerCatalogo {
@@ -255,10 +282,7 @@ header {
 }
 
 
-.card .contenido a
-
-/* button a */
-    {
+.card .contenido a {
     padding: 5px;
     text-decoration: none;
     background-color: #F2DAAC;
@@ -276,9 +300,8 @@ header {
 
 /* Cuerpo Noticias */
 
-.sectionNoticias {
+.news {
     background-color: #F2DAAC;
-    margin: 3.125rem;
     padding: 2.5rem;
 }
 
@@ -296,66 +319,63 @@ header {
 }
 
 .sectionNoticias div img {
-    width: auto;
+    width: 100%;
     height: 50%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 /* Contacto */
 
 .mainContacto {
     background-color: #F2DAAC;
-    margin: 3.125rem;
     padding: 2.5rem;
 }
 
-.mainContacto .contactoPrincipal {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-}
-
-.mainContacto .contactoPrincipal h3 {
+.contactoPrincipal h3 {
     padding: 1.25rem;
 }
 
-
-.mainContacto .contactoPrincipal div form fieldset label {
-    display: block;
-}
-
-.mainContacto .contactoSecundario div {
-    padding: 2.5rem;
-}
-
-.mainContacto .contactoSecundario div h3 {
-    padding: 2.5rem;
-}
-
-.contactoSecundario div ul li {
+.mainContacto div ul li {
     list-style: none;
 }
 
-.contactoSecundario div ul li a {
+.mainContacto div ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 1.875rem;
+}
+
+.mainContacto div h3 {
+    padding: 2.5rem;
+}
+
+.contactoSecundario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.contactoSecundario a {
     text-decoration: none;
     color: black;
     padding: 1.875rem;
 }
 
 .maps {
-    margin: 2.5rem;
-    overflow: hidden;
-    padding-bottom: 56.25%;
     position: relative;
+    width: 100%;
     height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
 }
 
 .maps iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* pagina Sobre Mi */
@@ -365,7 +385,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bold;
-    margin: 3.125rem;
     padding: 2.5rem;
 }
 
@@ -674,4 +693,50 @@ footer .spotify {
     .footlog {
         margin: 1rem;
     }
+}
+
+/* CONTACTO */
+@media (max-width:428px) {
+    .mainContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContacto section {
+        width: 100%;
+    }
+
+    .contactoSecundario {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .contactoSecundario div {
+        width: 100%;
+        margin-right: 4.375rem;
+    }
+
+    .contactoSecundario div h3 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        white-space: nowrap;
+        margin-left: 3.5rem;
+    }
+
+    .contactoSecundario div {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contactoSecundario a {
+        text-align: center;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+
 }
