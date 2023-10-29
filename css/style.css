@@ -316,7 +316,7 @@ select:focus {
 .sectionNoticias h2 {
     color: black;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 1.25rem;
 }
 
@@ -344,6 +344,7 @@ select:focus {
     transition: .5s ease-in-out;
 }
 
+
 .imgNews:hover .animacion {
     bottom: 0;
     opacity: 1;
@@ -351,8 +352,9 @@ select:focus {
 }
 
 .textNews {
-    color: #D96704;
+    color: #D97904;
     font-weight: bold;
+    text-shadow: 1px 1.5px #000000;
     padding: 1.25rem;
     font-size: 3.125rem;
     position: absolute;
@@ -361,13 +363,12 @@ select:focus {
     right: 0;
     width: 100%;
     height: 1.25rem;
-    background-color: transparent;
     text-align: center;
     line-height: 1.25;
     transform: translateY(-50%);
 }
 
-.grupoWhatsapp{
+.grupoWhatsapp {
     padding: 2.5rem;
 }
 
@@ -535,16 +536,13 @@ footer .spotify {
             "barra"
         ;
     }
-
     .navbar {
         justify-content: center;
         align-items: center;
     }
-
     .sectionPrincipal h1 {
         font-size: 1.25rem;
     }
-
     .cardContainer {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -558,7 +556,6 @@ footer .spotify {
         margin-left: 8.125rem;
     }
 }
-
 @media (max-width:768px) {
     .navbar {
         font-size: 1.25rem;
@@ -660,37 +657,6 @@ footer .spotify {
     }
 }
 
-@media (max-width:360px) {
-    .cardContainer {
-        margin-right: 7rem;
-    }
-
-    .spotify {
-        height: 12.5rem;
-    }
-}
-
-@media (max-width:320px) {
-    .navbar ul {
-        font-size: 1.125rem;
-    }
-
-    .articleIndex {
-        font-size: 0.75em;
-    }
-
-    .cardContainer {
-        margin-right: 7.1rem;
-    }
-
-    footer {
-        padding-bottom: 2.50rem;
-    }
-
-    .spotify {
-        height: 12.5rem;
-    }
-}
 
 /* CATALOGO */
 
@@ -724,6 +690,27 @@ footer .spotify {
         width: 20%;
         top: 0;
         right: 0;
+    }
+
+    .buscadorEspecifico {
+        flex-wrap: wrap;
+    }
+
+    .buscadorEspecifico label {
+        font-size: 1rem;
+        border: .5rem solid #D96704;
+        margin: .5rem;
+        width: calc(100% - 1.25rem);
+    }
+
+    .buscadorEspecifico label select {
+        padding: 0.25rem;
+    }
+
+    select {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: .0625rem solid #ccc;
     }
 
     .cardsContainerCatalogo {
@@ -784,6 +771,45 @@ footer .spotify {
         width: 100%;
         white-space: nowrap;
     }
-
-
+}
+/* NOTICIAS */
+@media (max-width:1024px){
+    .textNews{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:780px){
+    .textNews{
+        font-size: 1.875rem;
+    }
+}
+@media (max-width:627px){
+    .textNews{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:534px){
+    .textNews{
+        font-size: 1.25rem;
+    }
+}
+@media (max-width:473px){
+    .textNews{
+        font-size: 1.20rem;
+    }
+}
+@media (max-width:460px){
+    .textNews{
+        font-size: 1.125rem;
+    }
+}
+@media (max-width:441px){
+    .textNews{
+        font-size: 1.0625rem;
+    }
+}
+@media (max-width:426px){
+    .textNews{
+        font-size: 1rem;
+    }
 }
