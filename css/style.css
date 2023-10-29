@@ -674,7 +674,7 @@ footer .spotify {
 
 }
 
-@media (max-width:428px) {
+@media (max-width:540px) {
     .buscar {
         display: flex;
         flex-direction: column;
