@@ -19,6 +19,7 @@ body {
     overflow-x: hidden
 }
 
+
 header {
     display: grid;
     width: 100;
@@ -332,6 +333,7 @@ select:focus {
     height: auto;
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 .animacion {
@@ -366,6 +368,21 @@ select:focus {
     text-align: center;
     line-height: 1.25;
     transform: translateY(-50%);
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 .grupoWhatsapp {
@@ -397,11 +414,18 @@ select:focus {
     padding: 2.5rem;
 }
 
+button:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    background-color: #D97904 !important;
+}
+
 .contactoSecundario {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 2.5rem;
+    margin-top: .625rem;
 }
 
 .contactoSecundario a {
@@ -486,41 +510,6 @@ footer {
     font-weight: bold;
 }
 
-footer div a .logoPie {
-    padding: 1.25rem;
-
-}
-
-footer .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-
-.footlog {
-    margin: .625rem
-}
-
-.rrss {
-    padding: 1.25rem;
-}
-
-.footcontacto {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-
-.footcontacto ul li a {
-    text-decoration: none;
-    color: black;
-}
-
 footer .spotify {
     padding: 1.25rem;
 }
@@ -536,13 +525,16 @@ footer .spotify {
             "barra"
         ;
     }
+
     .navbar {
         justify-content: center;
         align-items: center;
     }
+
     .sectionPrincipal h1 {
         font-size: 1.25rem;
     }
+
     .cardContainer {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -556,6 +548,7 @@ footer .spotify {
         margin-left: 8.125rem;
     }
 }
+
 @media (max-width:768px) {
     .navbar {
         font-size: 1.25rem;
@@ -574,9 +567,6 @@ footer .spotify {
         margin-left: 7.5rem;
     }
 
-    footer {
-        font-size: 1.50rem;
-    }
 }
 
 @media screen and (max-width: 636px) {
@@ -725,7 +715,7 @@ footer .spotify {
     }
 
     .footlog {
-        margin: 1rem;
+        margin: 0 1rem;
     }
 }
 
@@ -772,44 +762,52 @@ footer .spotify {
         white-space: nowrap;
     }
 }
+
 /* NOTICIAS */
-@media (max-width:1024px){
-    .textNews{
+@media (max-width:1024px) {
+    .textNews {
         font-size: 2.5rem;
     }
 }
-@media (max-width:780px){
-    .textNews{
+
+@media (max-width:780px) {
+    .textNews {
         font-size: 1.875rem;
     }
 }
-@media (max-width:627px){
-    .textNews{
+
+@media (max-width:627px) {
+    .textNews {
         font-size: 1.5rem;
     }
 }
-@media (max-width:534px){
-    .textNews{
+
+@media (max-width:534px) {
+    .textNews {
         font-size: 1.25rem;
     }
 }
-@media (max-width:473px){
-    .textNews{
+
+@media (max-width:473px) {
+    .textNews {
         font-size: 1.20rem;
     }
 }
-@media (max-width:460px){
-    .textNews{
+
+@media (max-width:460px) {
+    .textNews {
         font-size: 1.125rem;
     }
 }
-@media (max-width:441px){
-    .textNews{
+
+@media (max-width:441px) {
+    .textNews {
         font-size: 1.0625rem;
     }
 }
-@media (max-width:426px){
-    .textNews{
+
+@media (max-width:426px) {
+    .textNews {
         font-size: 1rem;
     }
 }
