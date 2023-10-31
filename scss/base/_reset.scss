@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: map-get($fuentes, georgia), map-get($fuentes, times-new-roman), map-get($fuentes, times), map-get($fuentes, serif);
+    text-align: center;
+    width: 100%; /* sino funciona ver aqui */
+    height: 100%;
+    overflow-x: hidden
+}

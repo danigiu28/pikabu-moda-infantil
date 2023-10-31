@@ -1,0 +1,38 @@
+.articleIndex {
+    background-color: #F2DAAC;
+    div {
+        padding: 1rem;
+        margin: 0 1rem;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    h1 {
+        color: #D96704;
+        text-shadow: .0625rem .0625rem black;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    div h4 {
+        margin-bottom: 0;
+        padding: .3125rem;
+    }
+}
+.sectionPrincipal {
+    width: 100%;
+    background-color: #D97904;
+    padding: 2.5rem;
+    h1 {
+        color: white;
+        background-color: #f2daac72;
+        font-size: 1.8125rem;
+        text-align: center;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        border: 1px solid #b05302;
+    }
+}
