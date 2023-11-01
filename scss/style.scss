@@ -1,19 +1,20 @@
-/* 1-variable mixins mapas = utilities */
-
 @import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixins";
 
-
-/* 2-carpeta base */
-
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/main-inicio";
+@import "./layout/responsive/media-inicio";
 @import "./layout/footer";
 @import "./layout/main-catalogo";
-@import "./layout/responsive/media-inicio";
+@import "./layout/responsive/media-catalogo";
 @import "./layout/main-noticias";
 @import "./layout/responsive/media-noticias";
+@import "./layout/main-contacto";
+@import "./layout/responsive/media-contacto";
+@import "./layout/main-sobre-mi";
+
+
 
 

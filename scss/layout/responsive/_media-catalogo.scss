@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    .cardsContainerCatalogo {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 636px) {
+    .cardsContainerCatalogo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 75%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .buscar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 100%;
+            padding: 1.25rem;
+        }
+    }
+
+    .btn {
+        width: 20%;
+        top: 0;
+        right: 0;
+    }
+
+    .buscadorEspecifico {
+        flex-wrap: wrap;
+
+        label {
+            font-size: 1rem;
+            border: .5rem solid #D96704;
+            margin: .5rem;
+            width: calc(100% - 1.25rem);
+
+            select {
+                padding: 0.25rem;
+            }
+        }
+    }
+
+    select {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: .0625rem solid #ccc;
+    }
+
+    .card {
+        width: 75%;
+        margin: 1rem;
+    }
+}
