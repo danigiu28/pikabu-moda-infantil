@@ -1,16 +1,15 @@
 .news {
-    background-color: #F2DAAC;
+    background-color: $color-secundario;
     padding: 2.5rem;
     align-items: center;
     margin: auto;
 }
 
 .sectionNoticias {
-    h2 {
-        color: black;
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 1.25rem;
+    h1 {
+        border-color: $color-principal;
+        border-style: double;
+        background-color: #f2daac5d;
     }
 
     div img {
@@ -21,7 +20,7 @@
 
 .imgNews {
     margin: .3125rem auto;
-    border: .0625rem solid #D96704;
+    border: .0625rem solid $color-principal;
     width: 50%;
     height: auto;
     position: relative;
@@ -42,11 +41,11 @@
 .imgNews:hover .animacion {
     bottom: 0;
     opacity: 1;
-    box-shadow: 0rem 0rem 1.25rem #D96704;
+    box-shadow: 0rem 0rem 1.25rem $color-principal;
 }
 
 .textNews {
-    color: #D97904;
+    color: $color-alternativo;
     font-weight: bold;
     text-shadow: .0625rem .0938rem #000000;
     padding: 1.25rem;

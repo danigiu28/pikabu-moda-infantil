@@ -44,11 +44,7 @@
 @media (max-width: 636px) {
 
     .cardContainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: center;
+        @include flexbox (column,wrap,center,center);
         margin-right: none;
     }
 }

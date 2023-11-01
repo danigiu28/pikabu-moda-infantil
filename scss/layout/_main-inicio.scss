@@ -1,21 +1,27 @@
 .articleIndex {
     background-color: #F2DAAC;
+
     div {
-        padding: 1rem;
+        padding: 1rem 1rem 0;
+
         h1 {
-            color: #D96704;
+            color: $color-principal;
+            text-shadow: .0625rem .0625rem $color-principal;
             font-family: cursive;
             font-weight: bold;
         }
+
         h2 {
             color: black;
             text-shadow: .0625rem .0625rem black;
         }
+
         p {
+            @extend h2;
             font-size: 1.25rem;
-            color: black;
             text-shadow: black;
         }
+
         img {
             display: block;
             margin-left: auto;
@@ -23,28 +29,32 @@
             max-width: 100%;
             height: auto;
         }
+
         h4 {
             margin-bottom: 0;
             padding: .3125rem;
         }
     }
 }
+
 .sectionPrincipal {
-    background-color: #D97904;
-    padding: 2.5rem;
+    background-image: linear-gradient(to top, #d96704, #d96b03, #d96e03, #d97203, #d97503, #db7f19, #dd8929, #df9337, #e3a654, #e8b870, #edc98e, #f2daac);
+    padding: 1.25rem;
+
     h2 {
         color: white;
-        background-color: #f2daac72;
-        font-size: 1.8125rem;
+        background-image: radial-gradient(circle, #d97604, #d97204, #d96f03, #d96b04, #d96704);
         text-align: center;
+        text-shadow: .0625rem .0625rem black;
         padding: 1.25rem;
         margin-bottom: 1.25rem;
         border: .0625rem solid #b05302;
         border-radius: 1.25rem;
     }
 }
+
 .cardContainer {
-    @include flexbox (row,wrap,space-evenly,center);
+    @include flexbox (row, wrap, space-evenly, center);
 }
 
 .card {
@@ -54,7 +64,7 @@
     border-radius: 30%;
     border-radius: 1.25rem;
     box-shadow: 1px 1px .625rem black;
-    background-color: #F2DAAC;
+    background-color: $color-secundario;
     position: relative;
     overflow: hidden;
 
@@ -65,9 +75,8 @@
     }
 
     p {
-        padding: .625rem;
+        @extend h3;
         font-size: 1.25em;
-        vertical-align: bottom;
     }
 
     div img {
@@ -81,7 +90,7 @@
     margin: 1.25rem;
 
     a {
-        background-color: #F2DAAC;
+        background-color: $color-secundario;
         padding: 1.25rem;
         border-radius: 50%;
         color: black;
@@ -93,7 +102,7 @@
 }
 
 .sectionSecundaria {
-    background-color: #F2DAAC;
+    background-color: $color-secundario;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 2.5rem;

@@ -17,6 +17,10 @@
         div {
             width: 100%;
             margin-right: 4.375rem;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+        }
 
             h3 {
                 display: flex;
@@ -25,11 +29,6 @@
                 white-space: nowrap;
                 margin-left: 3.5rem;
             }
-
-            justify-content: space-between;
-            width: 100%;
-            padding: 0;
-        }
 
         a {
             text-align: center;

@@ -7,10 +7,7 @@
 
 @media (max-width: 636px) {
     .cardsContainerCatalogo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flexbox (column,wrap,center,center)
     }
 
     .card {
@@ -21,9 +18,7 @@
 
 @media (max-width: 540px) {
     .buscar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexbox (column,none,none,center);
 
         input {
             width: 100%;
