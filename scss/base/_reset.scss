@@ -6,7 +6,7 @@
 html {
     font-family: map-get($fuentes, georgia), map-get($fuentes, times-new-roman), map-get($fuentes, times), map-get($fuentes, serif);
     text-align: center;
-    width: 100%; /* sino funciona ver aqui */
+    margin: 0;
     height: 100%;
-    overflow-x: hidden
+    
 }

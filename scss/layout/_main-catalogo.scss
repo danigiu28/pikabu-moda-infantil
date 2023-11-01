@@ -1,0 +1,92 @@
+.cabeceraCatalogo {
+    background-color: #F2DAAC;
+    padding: 2.5rem;
+}
+
+.buscar {
+    position: relative;
+    padding: .625rem;
+
+    input {
+        width: 21.875rem;
+        height: 2.5rem;
+        padding: 1.25rem;
+        margin: 0 0 1.25rem;
+        font-size: 1.125rem;
+        border: 1px solid silver;
+        border-radius: 1.875rem;
+        outline: none;
+    }
+}
+
+.btn {
+    background-color: #D96704;
+    padding: .625rem;
+    top: 0;
+    position: absolute;
+    border-radius: 1.875rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #D96704;
+        border-width: .3125rem;
+    }
+}
+
+.buscadorEspecifico {
+    @include flexbox(row, none, center, center);
+
+    label {
+        padding: .625rem;
+        font-size: 1.125rem;
+        color: #D96704;
+        text-shadow: .0625rem .0625rem black;
+        font-weight: 600;
+        border: .625rem solid #D96704;
+        border-radius: 1.875rem;
+        margin: .625rem;
+
+        select {
+            background-color: #f5f5f5;
+            width: 100%;
+            padding: .625rem;
+            border: .125rem solid #ccc;
+            margin: .125rem;
+            border-radius: 1.25rem;
+            text-align: center;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            &:focus {
+                outline: none;
+                border-color: #D97904;
+            }
+        }
+    }
+}
+
+.cardsContainerCatalogo {
+    position: relative;
+    @include flexbox (row,wrap,space-between,center);
+    width: 100%;
+    background-color: #D97904;
+    border: 2.5rem double #f2daac78;
+    padding: 1.25rem;
+}
+
+.card .contenido a {
+    padding: .3125rem;
+    text-decoration: none;
+    background-color: #F2DAAC;
+    border: .3125rem double #D97904;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.like {
+    position: absolute;
+    top: .625rem;
+    right: .625rem;
+}

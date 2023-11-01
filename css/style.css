@@ -8,10 +8,8 @@
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
-  width: 100%;
-  /* sino funciona ver aqui */
-  height: 100%;
-  overflow-x: hidden; }
+  margin: 0;
+  height: 100%; }
 
 header {
   display: flex;
@@ -19,7 +17,6 @@ header {
   flex-wrap: none;
   justify-content: center;
   align-items: none;
-  gap: none;
   background-color: #D96704;
   font-size: 1.55rem;
   font-style: italic;
@@ -31,32 +28,321 @@ header {
 .articleIndex {
   background-color: #F2DAAC; }
   .articleIndex div {
-    padding: 1rem;
-    margin: 0 1rem; }
+    padding: 1rem; }
+    .articleIndex div h1 {
+      color: #D96704;
+      font-family: cursive;
+      font-weight: bold; }
+    .articleIndex div h2 {
+      color: black;
+      text-shadow: .0625rem .0625rem black; }
+    .articleIndex div p {
+      font-size: 1.25rem;
+      color: black;
+      text-shadow: black; }
     .articleIndex div img {
       display: block;
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
       height: auto; }
-  .articleIndex h1 {
-    color: #D96704;
-    text-shadow: .0625rem .0625rem black;
-    font-family: cursive;
-    font-weight: bold; }
-  .articleIndex div h4 {
-    margin-bottom: 0;
-    padding: .3125rem; }
+    .articleIndex div h4 {
+      margin-bottom: 0;
+      padding: .3125rem; }
 
 .sectionPrincipal {
-  width: 100%;
   background-color: #D97904;
   padding: 2.5rem; }
-  .sectionPrincipal h1 {
+  .sectionPrincipal h2 {
     color: white;
     background-color: #f2daac72;
     font-size: 1.8125rem;
     text-align: center;
     padding: 1.25rem;
     margin-bottom: 1.25rem;
-    border: 1px solid #b05302; }
+    border: .0625rem solid #b05302;
+    border-radius: 1.25rem; }
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.card {
+  width: 15rem;
+  padding-bottom: 1.875rem;
+  margin-bottom: 1.25rem;
+  border-radius: 30%;
+  border-radius: 1.25rem;
+  box-shadow: 1px 1px .625rem black;
+  background-color: #F2DAAC;
+  position: relative;
+  overflow: hidden; }
+  .card h3 {
+    padding: .625rem;
+    font-size: 1.5em;
+    vertical-align: bottom; }
+  .card p {
+    padding: .625rem;
+    font-size: 1.25em;
+    vertical-align: bottom; }
+  .card div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.btnInicioCatalogo {
+  margin: 1.25rem; }
+  .btnInicioCatalogo a {
+    background-color: #F2DAAC;
+    padding: 1.25rem;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 1px 1px .625rem black; }
+
+.sectionSecundaria {
+  background-color: #F2DAAC;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2.5rem; }
+  .sectionSecundaria div a {
+    text-decoration: none;
+    color: black; }
+
+footer {
+  background-color: #D96704;
+  font-size: 1.50rem;
+  font-style: italic;
+  font-weight: bold; }
+  footer .footlog {
+    margin: 0 1.25rem; }
+  footer .spotify {
+    padding: 1.25rem; }
+
+.cabeceraCatalogo {
+  background-color: #F2DAAC;
+  padding: 2.5rem; }
+
+.buscar {
+  position: relative;
+  padding: .625rem; }
+  .buscar input {
+    width: 21.875rem;
+    height: 2.5rem;
+    padding: 1.25rem;
+    margin: 0 0 1.25rem;
+    font-size: 1.125rem;
+    border: 1px solid silver;
+    border-radius: 1.875rem;
+    outline: none; }
+
+.btn {
+  background-color: #D96704;
+  padding: .625rem;
+  top: 0;
+  position: absolute;
+  border-radius: 1.875rem;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #D96704;
+    border-width: .3125rem; }
+
+.buscadorEspecifico {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center; }
+  .buscadorEspecifico label {
+    padding: .625rem;
+    font-size: 1.125rem;
+    color: #D96704;
+    text-shadow: .0625rem .0625rem black;
+    font-weight: 600;
+    border: .625rem solid #D96704;
+    border-radius: 1.875rem;
+    margin: .625rem; }
+    .buscadorEspecifico label select {
+      background-color: #f5f5f5;
+      width: 100%;
+      padding: .625rem;
+      border: .125rem solid #ccc;
+      margin: .125rem;
+      border-radius: 1.25rem;
+      text-align: center;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+      .buscadorEspecifico label select:focus {
+        outline: none;
+        border-color: #D97904; }
+
+.cardsContainerCatalogo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #D97904;
+  border: 2.5rem double #f2daac78;
+  padding: 1.25rem; }
+
+.card .contenido a {
+  padding: .3125rem;
+  text-decoration: none;
+  background-color: #F2DAAC;
+  border: .3125rem double #D97904;
+  color: black;
+  font-style: italic;
+  font-weight: bold; }
+
+.like {
+  position: absolute;
+  top: .625rem;
+  right: .625rem; }
+
+@media (max-width: 1024px) {
+  .sectionPrincipal h1 {
+    font-size: 1.25rem; }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center; }
+    .cardContainer > div:nth-child(2), .cardContainer > div:nth-child(5) {
+      grid-column: 2 / span 2; } }
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1.25rem; }
+  .sectionPrincipal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center; }
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+    .cardContainer > div:nth-child(2), .cardContainer > div:nth-child(5) {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1; } }
+
+@media (max-width: 636px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: none; } }
+
+.news {
+  background-color: #F2DAAC;
+  padding: 2.5rem;
+  align-items: center;
+  margin: auto; }
+
+.sectionNoticias h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.25rem; }
+
+.sectionNoticias div img {
+  width: 100%;
+  height: 25%; }
+
+.imgNews {
+  margin: .3125rem auto;
+  border: .0625rem solid #D96704;
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  overflow: hidden; }
+
+.animacion {
+  position: absolute;
+  bottom: -3.125rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: .5s ease-in-out; }
+
+.imgNews:hover .animacion {
+  bottom: 0;
+  opacity: 1;
+  box-shadow: 0rem 0rem 1.25rem #D96704; }
+
+.textNews {
+  color: #D97904;
+  font-weight: bold;
+  text-shadow: .0625rem .0938rem #000000;
+  padding: 1.25rem;
+  font-size: 3.125rem;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25;
+  transform: translateY(-50%);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.grupoWhatsapp {
+  padding: 2.5rem; }
+
+@media (max-width: 1024px) {
+  .textNews {
+    font-size: 2.5rem; } }
+
+@media (max-width: 780px) {
+  .textNews {
+    font-size: 1.875rem; } }
+
+@media (max-width: 627px) {
+  .textNews {
+    font-size: 1.5rem; } }
+
+@media (max-width: 534px) {
+  .textNews {
+    font-size: 1.25rem; } }
+
+@media (max-width: 473px) {
+  .textNews {
+    font-size: 1.20rem; } }
+
+@media (max-width: 460px) {
+  .textNews {
+    font-size: 1.125rem; } }
+
+@media (max-width: 441px) {
+  .textNews {
+    font-size: 1.0625rem; } }
+
+@media (max-width: 426px) {
+  .textNews {
+    font-size: 1rem; } }
