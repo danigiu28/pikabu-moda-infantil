@@ -19,7 +19,8 @@ header {
   header .navbar .container-fluid {
     display: flex;
     justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%; }
     header .navbar .container-fluid .navbar-brand img {
       width: 150px;
       height: 150px;
@@ -164,8 +165,18 @@ footer, header {
   font-weight: bold; }
   footer .footlog, header .footlog {
     margin: 0 1.25rem; }
+    footer .footlog p, header .footlog p {
+      color: black; }
+  footer .container h4, header .container h4 {
+    color: black; }
+  footer .container a, header .container a {
+    text-decoration: none;
+    color: black; }
+  footer .container .list-unstyled li, header .container .list-unstyled li {
+    padding: .5rem; }
   footer .spotify, header .spotify {
-    padding: 1.25rem; }
+    padding: 1.25rem;
+    border-radius: .75rem; }
 
 .cabeceraCatalogo {
   background-color: #F2DAAC;

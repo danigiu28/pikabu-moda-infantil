@@ -6,9 +6,27 @@ footer {
 
     .footlog {
         margin: 0 1.25rem;
+            p{
+                color: black;
+            }
+    }
+    .container{
+            h4{
+                color: black;                
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .list-unstyled{
+                li{
+                    padding: .5rem;
+                }
+            }
     }
 
     .spotify {
         padding: 1.25rem;
+        border-radius: .75rem;
     }
 }
