@@ -22,10 +22,8 @@ header {
     margin: 0 auto;
     max-width: 100%; }
     header .navbar .container-fluid .navbar-brand img {
-      width: 150px;
-      height: 150px;
-      max-width: 100%;
-      max-height: auto;
+      width: 225px;
+      height: 225px;
       border: 0;
       display: inline-block;
       vertical-align: middle;
@@ -50,11 +48,13 @@ header {
       text-shadow: black; }
     .articleIndex div img {
       display: block;
+      width: 475px;
+      height: 199px;
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
       height: auto; }
-    .articleIndex div h4 {
+    .articleIndex div h3, .articleIndex div .card p, .card .articleIndex div p, .articleIndex div .cardsContainerCatalogo .card .contenido p, .cardsContainerCatalogo .card .contenido .articleIndex div p {
       margin-bottom: 0;
       padding: .3125rem; }
 
@@ -88,7 +88,7 @@ header {
   background-color: #F2DAAC;
   position: relative;
   overflow: hidden; }
-  .card h3, .card p {
+  .card h3, .card p, .cardsContainerCatalogo .card .contenido p {
     padding: .625rem;
     font-size: 1.5em;
     vertical-align: bottom; }
@@ -165,9 +165,12 @@ footer, header {
   font-weight: bold; }
   footer .footlog, header .footlog {
     margin: 0 1.25rem; }
+    footer .footlog a img, header .footlog a img {
+      width: 130px;
+      height: 145px; }
     footer .footlog p, header .footlog p {
       color: black; }
-  footer .container h4, header .container h4 {
+  footer .container h2, header .container h2, footer .container .articleIndex div p, .articleIndex div footer .container p, header .container .articleIndex div p, .articleIndex div header .container p {
     color: black; }
   footer .container a, header .container a {
     text-decoration: none;
@@ -209,6 +212,9 @@ footer, header {
   .btn:hover {
     background-color: #D96704;
     border-width: .3125rem; }
+  .btn img {
+    width: 32px;
+    height: 32px; }
 
 .buscadorEspecifico {
   display: flex;
@@ -251,20 +257,35 @@ footer, header {
   background-color: #F2DAAC;
   border: 2.5rem double #f2daac78;
   padding: 1.25rem; }
-
-.card .contenido a {
-  padding: .3125rem;
-  text-decoration: none;
-  background-color: #D97904;
-  border: 0.3125rem double #F2DAAC;
-  color: black;
-  font-style: italic;
-  font-weight: bold; }
-
-.like {
-  position: absolute;
-  top: .625rem;
-  right: .625rem; }
+  .cardsContainerCatalogo .card {
+    width: 240px;
+    height: 550px; }
+    .cardsContainerCatalogo .card .contenido {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-items: center; }
+      .cardsContainerCatalogo .card .contenido h2, .cardsContainerCatalogo .card .contenido .articleIndex div p, .articleIndex div .cardsContainerCatalogo .card .contenido p {
+        padding: .625rem;
+        font-size: 1.25rem;
+        vertical-align: bottom; }
+      .cardsContainerCatalogo .card .contenido p {
+        font-size: 1.125rem; }
+      .cardsContainerCatalogo .card .contenido button {
+        width: 12.5rem;
+        padding: .3125rem;
+        text-decoration: none;
+        background-color: #D97904;
+        border: 0.3125rem double #F2DAAC;
+        color: black;
+        font-style: italic;
+        font-weight: bold; }
+  .cardsContainerCatalogo .like {
+    position: absolute;
+    top: .625rem;
+    right: .625rem; }
 
 @media (max-width: 768px) {
   .cardsContainerCatalogo {
@@ -324,14 +345,24 @@ footer, header {
   border-style: double;
   background-color: #f2daac5d; }
 
+.sectionNoticias h2, .sectionNoticias .articleIndex div p, .articleIndex div .sectionNoticias p {
+  font-size: 1.5rem;
+  color: black; }
+
 .sectionNoticias div img {
   width: 100%;
-  height: 25%; }
+  height: 100%; }
+
+.sectionNoticias .news {
+  margin: 20px;
+  border-color: #D96704;
+  border-style: double;
+  background-color: #D97904; }
 
 .imgNews {
   margin: .3125rem auto;
   border: 0.0625rem solid #D96704;
-  width: 50%;
+  width: 100%;
   height: auto;
   position: relative;
   display: inline-block;
@@ -356,7 +387,7 @@ footer, header {
   font-weight: bold;
   text-shadow: .0625rem .0938rem #000000;
   padding: 1.25rem;
-  font-size: 3.125rem;
+  font-size: 3.75rem;
   position: absolute;
   top: 25%;
   left: 0;
@@ -381,37 +412,47 @@ footer, header {
 .grupoWhatsapp {
   padding: 2.5rem; }
 
-@media (max-width: 1024px) {
-  .textNews {
-    font-size: 2.5rem; } }
-
 @media (max-width: 780px) {
   .textNews {
-    font-size: 1.875rem; } }
+    font-size: 3rem; } }
 
 @media (max-width: 627px) {
   .textNews {
-    font-size: 1.5rem; } }
+    font-size: 2.5rem; }
+  h2, .articleIndex div p {
+    font-size: 1.25rem !important; } }
 
-@media (max-width: 534px) {
+@media (max-width: 583px) {
   .textNews {
-    font-size: 1.25rem; } }
+    font-size: 2rem; }
+  h2, .articleIndex div p {
+    font-size: 1.20rem !important; } }
 
 @media (max-width: 473px) {
   .textNews {
-    font-size: 1.20rem; } }
+    font-size: 1.80rem; } }
 
 @media (max-width: 460px) {
   .textNews {
-    font-size: 1.125rem; } }
+    font-size: 1.60rem; } }
 
 @media (max-width: 441px) {
   .textNews {
-    font-size: 1.0625rem; } }
+    font-size: 1.40rem; }
+  h2, .articleIndex div p {
+    font-size: 1.15rem !important; } }
 
 @media (max-width: 426px) {
   .textNews {
-    font-size: 1rem; } }
+    font-size: 1.20rem; }
+  h2, .articleIndex div p {
+    font-size: 1.10rem !important; } }
+
+@media (max-width: 412px) {
+  .textNews {
+    font-size: 1rem; }
+  h2, .articleIndex div p {
+    font-size: 1rem !important; } }
 
 .mainContacto {
   background-color: #F2DAAC;
@@ -420,76 +461,82 @@ footer, header {
     border-color: #D96704;
     border-style: double;
     background-color: #f2daac5d; }
-
-.contactoPrincipal h3, .contactoPrincipal .card p, .card .contactoPrincipal p {
-  padding: 1.25rem; }
-
-.mainContacto div ul li {
-  list-style: none; }
-  .mainContacto div ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 1.875rem; }
-
-.mainContacto div h3, .mainContacto div .card p, .card .mainContacto div p {
-  padding: 2.5rem; }
-
-button:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s;
-  background-color: #D97904 !important; }
-
-.contactoSecundario {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: none;
-  justify-content: center;
-  align-items: center;
-  padding: 2.5rem; }
-  .contactoSecundario a {
-    text-decoration: none;
-    color: black;
-    padding: 1.875rem; }
-
-.maps {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden; }
-  .maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .mainContacto h2, .mainContacto .articleIndex div p, .articleIndex div .mainContacto p {
+    padding: 2.5rem; }
+  .mainContacto div ul {
+    padding-left: 0; }
+    .mainContacto div ul li {
+      list-style: none; }
+      .mainContacto div ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 1.875rem; }
+  .mainContacto .contactoPrincipal h3, .mainContacto .contactoPrincipal .card p, .card .mainContacto .contactoPrincipal p {
+    padding: 1.25rem; }
+  .mainContacto .contactoPrincipal .btnForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .mainContacto .contactoPrincipal .btnForm button {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.75rem;
+      margin: .9375rem auto;
+      border: .0625rem solid orange;
+      box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.07); }
+      .mainContacto .contactoPrincipal .btnForm button:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+        background-color: #D97904 !important; }
+  .mainContacto .contactoSecundario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    margin-top: 3.125rem; }
+    .mainContacto .contactoSecundario a {
+      text-decoration: none;
+      color: black;
+      padding: 1.875rem; }
+  .mainContacto .maps {
+    position: relative;
     width: 100%;
-    height: 100%; }
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden; }
+    .mainContacto .maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 @media (max-width: 428px) {
   .mainContacto {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     .mainContacto section {
       width: 100%; }
   .contactoSecundario {
+    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    margin: 0 1rem; }
-    .contactoSecundario div {
-      width: 100%;
-      margin-right: 4.375rem;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0; }
-    .contactoSecundario h3, .contactoSecundario .card p, .card .contactoSecundario p {
-      display: flex;
-      justify-content: center;
-      align-content: center;
+    align-items: center; }
+    .contactoSecundario h3, .contactoSecundario .card p, .card .contactoSecundario p, .contactoSecundario .cardsContainerCatalogo .card .contenido p, .cardsContainerCatalogo .card .contenido .contactoSecundario p {
       white-space: nowrap;
-      margin-left: 3.5rem; }
+      text-align: center; }
     .contactoSecundario a {
       text-align: center;
-      width: 100%;
+      width: 500px;
       white-space: nowrap; } }
 
 .mainSobremi {

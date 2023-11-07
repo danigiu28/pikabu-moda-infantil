@@ -6,12 +6,18 @@ footer {
 
     .footlog {
         margin: 0 1.25rem;
+            a{
+                img{
+                    width: 130px;
+                    height: 145px;
+                }
+            }
             p{
                 color: black;
             }
     }
     .container{
-            h4{
+            h2{
                 color: black;                
             }
             a{

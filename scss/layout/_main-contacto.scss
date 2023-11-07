@@ -1,54 +1,78 @@
 .mainContacto {
     background-color: $color-secundario;
     padding: 2.5rem;
+
     h1 {
         border-color: $color-principal;
         border-style: double;
         background-color: #f2daac5d;
     }
-}
 
-.contactoPrincipal h3 {
-    padding: 1.25rem;
-}
+    h2 {
+        padding: 2.5rem;
+    }
 
-.mainContacto div {
-    ul li {
-        list-style: none;
+    div {
+
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    @include icon;
+                }
+            }
+        }
+
+    }
+
+    .contactoPrincipal {
+        h3 {
+            padding: 1.25rem;
+        }
+
+        .btnForm {
+            @include flexbox (row, nowrap, center, center);
+            position: relative;
+
+            button {
+                width: 100%;
+                max-width: 500px;
+                padding: 0.75rem;
+                margin: .9375rem auto;
+                border: .0625rem solid orange;
+                box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.07);
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.3s;
+                    background-color: $color-alternativo !important;
+                }
+            }
+        }
+    }
+
+    .contactoSecundario {
+        @include flexbox (column, none, center, center);
+        padding: 2.5rem;
+        margin-top: 3.125rem;
 
         a {
             @include icon;
         }
     }
 
-    h3 {
-        padding: 2.5rem;
-    }
-}
+    .maps {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
 
-button:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-    background-color: $color-alternativo !important;
-}
-
-.contactoSecundario {
-    @include flexbox (column,none,center,center);
-    padding: 2.5rem;
-
-    a {
-        @include icon;
-    }
-}
-
-.maps {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-
-    iframe {
-        @include iframe;
+        iframe {
+            @include iframe;
+        }
     }
 }

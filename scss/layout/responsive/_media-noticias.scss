@@ -1,47 +1,61 @@
-@media (max-width: 1024px) {
-    .textNews {
-        font-size: 2.5rem;
-    }
-}
-
 @media (max-width: 780px) {
     .textNews {
-        font-size: 1.875rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 627px) {
     .textNews {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.25rem !important;
     }
 }
 
-@media (max-width: 534px) {
+@media (max-width: 583px) {
     .textNews {
-        font-size: 1.25rem;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.20rem !important;
     }
 }
 
 @media (max-width: 473px) {
     .textNews {
-        font-size: 1.20rem;
+        font-size: 1.80rem;
     }
 }
 
 @media (max-width: 460px) {
     .textNews {
-        font-size: 1.125rem;
+        font-size: 1.60rem;
     }
 }
 
 @media (max-width: 441px) {
     .textNews {
-        font-size: 1.0625rem;
+        font-size: 1.40rem;
+    }
+    h2{
+        font-size: 1.15rem !important;
     }
 }
 
 @media (max-width: 426px) {
     .textNews {
+        font-size: 1.20rem;
+    }
+    h2{
+        font-size: 1.10rem !important;
+    }
+}
+@media (max-width: 412px) {
+    .textNews {
         font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem !important;
     }
 }

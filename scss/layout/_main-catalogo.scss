@@ -1,6 +1,7 @@
 .cabeceraCatalogo {
     background-color: $color-secundario;
     padding: 2.5rem;
+
     h1 {
         border-color: $color-principal;
         border-style: double;
@@ -35,6 +36,11 @@
     &:hover {
         background-color: $color-principal;
         border-width: .3125rem;
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
     }
 }
 
@@ -73,25 +79,48 @@
 
 .cardsContainerCatalogo {
     position: relative;
-    @include flexbox (row,wrap,space-between,center);
+    @include flexbox (row, wrap, space-between, center);
     width: 100%;
     background-color: $color-secundario;
     border: 2.5rem double #f2daac78;
     padding: 1.25rem;
-}
 
-.card .contenido a {
-    padding: .3125rem;
-    text-decoration: none;
-    background-color: $color-alternativo;
-    border: .3125rem double $color-secundario;
-    color: black;
-    font-style: italic;
-    font-weight: bold;
-}
 
-.like {
-    position: absolute;
-    top: .625rem;
-    right: .625rem;
+    .card {
+        width: 240px;
+        height: 550px;
+
+        .contenido {
+            @include flexbox (column,wrap,center,center);
+            align-items: center;
+
+            h2 {
+                padding: .625rem;
+                font-size: 1.25rem;
+                vertical-align: bottom;
+            }
+
+            p {
+                @extend h3;
+                font-size: 1.125rem;
+            }
+
+            button {
+                width: 12.5rem;
+                padding: .3125rem;
+                text-decoration: none;
+                background-color: $color-alternativo;
+                border: .3125rem double $color-secundario;
+                color: black;
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .like {
+        position: absolute;
+        top: .625rem;
+        right: .625rem;
+    }
 }

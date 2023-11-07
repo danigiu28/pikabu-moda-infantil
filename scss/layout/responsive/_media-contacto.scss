@@ -3,6 +3,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
 
         section {
             width: 100%;
@@ -10,29 +11,17 @@
     }
 
     .contactoSecundario {
-        flex-direction: column;
+        @include flexbox (column, nowrap, center, center);
         align-items: center;
-        margin: 0 1rem;
-
-        div {
-            width: 100%;
-            margin-right: 4.375rem;
-            justify-content: space-between;
-            width: 100%;
-            padding: 0;
+        
+        h3 {
+            white-space: nowrap;
+            text-align: center;
         }
-
-            h3 {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                white-space: nowrap;
-                margin-left: 3.5rem;
-            }
 
         a {
             text-align: center;
-            width: 100%;
+            width: 500px;
             white-space: nowrap;
         }
     }
