@@ -477,7 +477,8 @@ footer, header {
       .mainContacto div ul li a {
         text-decoration: none;
         color: black;
-        padding: 1.875rem; }
+        padding: 1.875rem;
+        padding: 1rem; }
   .mainContacto .contactoPrincipal h3, .mainContacto .contactoPrincipal .card p, .card .mainContacto .contactoPrincipal p {
     padding: 1.25rem; }
   .mainContacto .contactoPrincipal .btnForm {
