@@ -8,7 +8,8 @@
     .textNews {
         font-size: 2.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.25rem !important;
     }
 }
@@ -17,7 +18,8 @@
     .textNews {
         font-size: 2rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.20rem !important;
     }
 }
@@ -38,7 +40,8 @@
     .textNews {
         font-size: 1.40rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.15rem !important;
     }
 }
@@ -47,15 +50,25 @@
     .textNews {
         font-size: 1.20rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.10rem !important;
     }
 }
+
 @media (max-width: 412px) {
     .textNews {
         font-size: 1rem;
     }
-    h2{
+
+    h2 {
         font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .textNews {
+        font-size: .875rem;
+        top: 15%;
     }
 }
