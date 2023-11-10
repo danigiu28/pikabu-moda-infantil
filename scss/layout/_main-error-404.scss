@@ -4,10 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 
     img {
-        width: 25%;
+        width: 35vh;
         border-radius: 25%;
         box-shadow: 5px 10px $color-principal;
     }
@@ -15,13 +15,13 @@
     h1 {
         color: $color-principal;
         text-shadow: 1px 1px black;
-        font-size: 40px;
+        font-size: 5vh;
         padding: 20px;
     }
 
     a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 3vh;
         font-weight: bold;
         padding: 13px 30px;
         border-radius: 15px;
