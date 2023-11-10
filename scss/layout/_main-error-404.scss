@@ -1,9 +1,6 @@
 .errorContainer {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox (column, none, center, center);
     gap: 50px;
 
     img {

@@ -91,7 +91,7 @@
         height: 550px;
 
         .contenido {
-            @include flexbox (column,wrap,center,center);
+            @include flexbox (column, wrap, center, center);
             align-items: center;
 
             h2 {
