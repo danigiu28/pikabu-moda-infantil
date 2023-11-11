@@ -7,7 +7,9 @@ Trabajamos con HTML5 y CSS3, aplicamos herramientas para optimizar al máximo nu
 Aplicamos Bootstrap y SEO al proyecto.
 El sitio se encuentra alojado en [Vercel](https://pikabu-moda-infantil.vercel.app/) y en [Netlify](https://pikabu-moda-infantil.netlify.app/) .
 </p>
+
 ------------
+
 <p>
 Se trata de un sitio e-comerce de moda infantil, una tienda real ubicada en Infiesto, Asturias, se trabajo con la paleta de colores original del negocio y con los logos que ya cuenta.
 </p>
