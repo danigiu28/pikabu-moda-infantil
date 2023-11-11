@@ -12,7 +12,5 @@ El sitio se encuentra alojado en [Vercel](https://pikabu-moda-infantil.vercel.ap
 Se trata de un sitio e-comerce de moda infantil, una tienda real ubicada en Infiesto, Asturias, se trabajo con la paleta de colores original del negocio y con los logos que ya cuenta.
 </p>
 Espero sea de vuestro agrado ya que fue realizado con mucho esfuerzo.
-[![pikabu-moda-infantil](https://i.ibb.co/sv9TVqz/logo-encabezado.webp "pikabu-moda-infantil")](https://i.ibb.co/sv9TVqz/logo-encabezado.webp "pikabu-moda-infantil")
-
 ------------
 
